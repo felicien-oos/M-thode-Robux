@@ -145,12 +145,25 @@
     max-width: 720px;
     height: 400px;
     border-radius: 20px;
-    margin: 10px auto 0;
+    margin: 10px auto 6px;
     box-shadow: 0 0 40px #00ff9977;
     transition: box-shadow 0.4s ease;
   }
   iframe:hover {
     box-shadow: 0 0 60px #00ff99cc;
+  }
+
+  /* Lien vidéo sous iframe */
+  .video-url {
+    text-align: center;
+    font-size: 15px;
+    color: #a8ffa8;
+    margin-bottom: 20px;
+    user-select: text;
+  }
+  .video-url a {
+    color: #5efc5e;
+    font-weight: 800;
   }
 
   /* Responsive */
@@ -188,16 +201,22 @@
   <p><strong>Étape 4 :</strong> Complétez aussi des quiz, défis et autres activités sur Microsoft Rewards pour gagner encore plus de points.</p>
   <p><strong>Étape 5 :</strong> Une fois que vous avez accumulé assez de points, échangez-les contre des cartes cadeaux Xbox ou Microsoft, puis utilisez-les pour acheter des Robux sur le site officiel Roblox.</p>
   <iframe src="https://www.youtube.com/embed/yoYuDcnpV5E" title="Tutoriel Microsoft Rewards - Gagner des points et Robux" allowfullscreen></iframe>
+  <div class="video-url">Vidéo YouTube : <a href="https://www.youtube.com/watch?v=yoYuDcnpV5E" target="_blank" rel="noopener noreferrer">Tutoriel Microsoft Rewards - Gagner des points et Robux
+<!-- suite méthode 1 déjà donnée plus haut -->
+
+  <iframe src="https://www.youtube.com/embed/yoYuDcnpV5E" title="Tutoriel Microsoft Rewards - Gagner des points et Robux" allowfullscreen></iframe>
+  <div class="video-url">Vidéo YouTube : <a href="https://www.youtube.com/watch?v=yoYuDcnpV5E" target="_blank" rel="noopener noreferrer">Tutoriel Microsoft Rewards - Gagner des points et Robux</a></div>
 </section>
 
 <section>
   <h2>Méthode 2 - Créer et vendre des vêtements sur Roblox</h2>
   <p><strong>Étape 1 :</strong> Téléchargez et installez un logiciel gratuit comme <a href="https://www.gimp.org/downloads/" target="_blank" rel="noopener noreferrer">GIMP</a> pour créer vos designs (512x512 pixels).</p>
-  <p><strong>Étape 2 :</strong> Connectez-vous à <a href="https://create.roblox.com" target="_blank" rel="noopener noreferrer">Roblox Studio</a>, puis allez dans "Vêtements".</p>
+  <p><strong>Étape 2 :</strong> Connectez-vous à <a href="https://create.roblox.com" target="_blank" rel="noopener noreferrer">Roblox Studio</a>, puis allez dans la section "Vêtements".</p>
   <p><strong>Étape 3 :</strong> Importez votre design, donnez un nom et une description.</p>
   <p><strong>Étape 4 :</strong> Activez la vente et fixez un prix en Robux.</p>
   <p><strong>Étape 5 :</strong> Partagez vos vêtements et attendez les achats pour gagner des Robux.</p>
   <iframe src="https://www.youtube.com/embed/4bXcSCg_xXY" title="Créer et vendre des vêtements Roblox - Tutoriel complet" allowfullscreen></iframe>
+  <div class="video-url">Vidéo YouTube : <a href="https://www.youtube.com/watch?v=4bXcSCg_xXY" target="_blank" rel="noopener noreferrer">Créer et vendre des vêtements Roblox - Tutoriel complet</a></div>
 </section>
 
 <section>
@@ -208,6 +227,7 @@
   <p><strong>Étape 4 :</strong> Fixez le prix en Robux, puis cliquez sur "Créer".</p>
   <p><strong>Étape 5 :</strong> Dans Roblox Studio, utilisez un <code>Script</code> et un <code>RemoteEvent</code> pour vérifier si un joueur possède le Game Pass et activer ses avantages dans le jeu.</p>
   <iframe src="https://www.youtube.com/embed/IOq1P8GZh9w" title="Comment créer un Game Pass Roblox - Tutoriel complet" allowfullscreen></iframe>
+  <div class="video-url">Vidéo YouTube : <a href="https://www.youtube.com/watch?v=IOq1P8GZh9w" target="_blank" rel="noopener noreferrer">Comment créer un Game Pass Roblox - Tutoriel complet</a></div>
 </section>
 
 <section>
@@ -216,6 +236,7 @@
   <p><strong>Étape 2 :</strong> Participez aux événements, souvent ils donnent des objets gratuits ou des Robux en récompense.</p>
   <p><strong>Étape 3 :</strong> Parfois, vous pouvez gagner des Robux en accomplissant des défis ou en participant à des concours créatifs.</p>
   <iframe src="https://www.youtube.com/embed/qXch6Trq4zA" title="Événements Roblox et comment gagner des Robux" allowfullscreen></iframe>
+  <div class="video-url">Vidéo YouTube : <a href="https://www.youtube.com/watch?v=qXch6Trq4zA" target="_blank" rel="noopener noreferrer">Événements Roblox et comment gagner des Robux</a></div>
 </section>
 
 <section>
@@ -224,4 +245,26 @@
   <p><strong>Étape 2 :</strong> Échangez vos points contre des cartes cadeaux Xbox ou Microsoft Store.</p>
   <p><strong>Étape 3 :</strong> Utilisez ces cartes cadeaux pour acheter des Robux directement sur le site officiel Roblox.</p>
   <iframe src="https://www.youtube.com/embed/yoYuDcnpV5E" title="Tutoriel pour acheter des Robux avec Microsoft Rewards" allowfullscreen></iframe>
-</section
+  <div class="video-url">Vidéo YouTube : <a href="https://www.youtube.com/watch?v=yoYuDcnpV5E" target="_blank" rel="noopener noreferrer">Tutoriel pour acheter des Robux avec Microsoft Rewards</a></div>
+</section>
+
+</div>
+
+<script>
+  function scrollToTop() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+
+  function filterSections() {
+    const input = document.getElementById('search').value.toLowerCase();
+    const sections = document.querySelectorAll('section');
+    sections.forEach(sec => {
+      const text = sec.innerText.toLowerCase();
+      sec.style.display = text.includes(input) ? '' : 'none';
+    });
+  }
+</script>
+
+</body>
+</html>
+
