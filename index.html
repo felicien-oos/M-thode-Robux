@@ -3,33 +3,29 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<meta name="description" content="Méthode Robux - Guide complet pour gagner des Robux gratuitement, créer des jeux Roblox, vendre des Game Pass, et rester sécurisé." />
-<title>Méthode Robux - Gagne des Robux gratuitement !</title>
+<title>Méthode Robux - Guide complet</title>
 <style>
-  /* Styles CSS ici */
   body {
     margin:0; padding:0; background:#121212; color:#eee; font-family:sans-serif;
-    min-height:100vh; display:flex; flex-direction:column;
   }
   header {
-    position:sticky; top:0; background:#1f1f1f; display:flex; align-items:center;
-    padding:10px 20px; gap:15px; border-bottom:1px solid #333; z-index:100;
-  }
-  header img.logo {
-    height:30px; width:30px; cursor:pointer;
+    position:sticky; top:0; background:#1f1f1f; display:flex; align-items:center; padding:10px 20px; gap:10px; border-bottom:1px solid #333; z-index:100;
   }
   #home-btn {
     background:none; border:none; color:#eee; font-size:1.2rem; cursor:pointer;
   }
-  #home-btn:hover, #logo-btn:hover {
+  #home-btn:hover {
     color:#4caf50;
   }
   #search-bar {
     flex-grow:1; padding:8px 12px; border-radius:20px; border:none; outline:none;
     background:#2c2c2c; color:#eee; font-size:1rem;
   }
+  #search-btn {
+    background:#4caf50; border:none; border-radius:50%; width:36px; height:36px; color:#121212; font-size:1.2rem; cursor:pointer;
+  }
   main {
-    max-width:900px; margin:auto; padding:20px; flex-grow:1;
+    max-width:900px; margin:auto; padding:20px;
   }
   section.method {
     background:#1e1e1e; border-radius:10px; padding:20px; margin-bottom:40px;
@@ -59,19 +55,18 @@
 </head>
 <body>
 <header>
-  <img src="https://cdn-icons-png.flaticon.com/512/25/25694.png" alt="Logo Accueil" class="logo" id="logo-btn" title="Accueil" tabindex="0" />
   <button id="home-btn" aria-label="Accueil">🏠 Accueil</button>
-  <input type="search" id="search-bar" placeholder="Chercher une méthode..." aria-label="Recherche des méthodes" />
+  <input type="search" id="search-bar" placeholder="Rechercher une méthode..." aria-label="Recherche des méthodes" />
+  <button id="search-btn" aria-label="Lancer la recherche">🔍</button>
 </header>
 <main id="content">
-  <!-- Méthodes injectées via JS -->
+  <!-- Méthodes injectées ici -->
 </main>
 <footer>
   © 2025 Méthode Robux - Créé par Félicien
 </footer>
 
 <script>
-  // Données des méthodes complètes avec vidéos intégrées
   const methods = [
     {
       id: "microsoft-rewards",
@@ -142,81 +137,51 @@
       \`
     },
     {
-      id: "concours",
-      title: "Participer à des concours Roblox",
+      id: "creer-jeu-complet",
+      title: "Créer un jeu complet sur Roblox Studio (débutant à pro)",
       content: \`
-        <p>Roblox organise des concours réguliers pour gagner des Robux et objets rares.</p>
+        <p>Apprends à créer un jeu complet avec Roblox Studio, du niveau débutant à professionnel.</p>
         <ul>
-          <li><a href="https://devforum.roblox.com" target="_blank" rel="noopener">DevForum Roblox</a></li>
-          <li><a href="https://twitter.com/Roblox" target="_blank" rel="noopener">Twitter officiel Roblox</a></li>
-          <li><a href="https://www.roblox.com/events" target="_blank" rel="noopener">Page événements Roblox</a></li>
-        </ul>
-        <div class="video-container">
-          <iframe src="https://www.youtube.com/embed/OeU7Lv6LS6Q" title="Participer aux concours Roblox" allowfullscreen></iframe>
-        </div>
-      \`
-    },
-    {
-      id: "apps-recompenses",
-      title: "Apps de récompenses",
-      content: \`
-        <p>Utilise des apps comme Swagbucks ou Idle-Empire pour gagner des points échangeables en Robux.</p>
-        <ul>
-          <li><a href="https://www.swagbucks.com" target="_blank" rel="noopener">Swagbucks</a></li>
-          <li><a href="https://idle-empire.com" target="_blank" rel="noopener">Idle-Empire</a></li>
-        </ul>
-        <div class="video-container">
-          <iframe src="https://www.youtube.com/embed/QXqPq3t7u2o" title="Apps récompenses pour Robux" allowfullscreen></iframe>
-        </div>
-      \`
-    },
-    {
-      id: "securite",
-      title: "Sécurité et protection du compte",
-      content: \`
-        <p>Protéger ton compte est essentiel :</p>
-        <ul>
-          <li>Active l'authentification à deux facteurs (2FA)</li>
-          <li>Ne partage jamais ton mot de passe</li>
-          <li>Méfie-toi des sites et apps frauduleuses</li>
-          <li>Utilise un antivirus et navigateur sécurisé</li>
-        </ul>
-        <div class="video-container">
-          <iframe src="https://www.youtube.com/embed/9dNz9kpuJUQ" title="Sécurité Roblox" allowfullscreen></iframe>
-        </div>
-      \`
-    },
-    {
-      id: "methode-studio",
-      title: "Méthode complète Roblox Studio - Débutant à Pro",
-      content: \`
-        <p>Ce guide t'explique comment créer un jeu Roblox de A à Z et vendre des Game Pass.</p>
-        <ol>
           <li>Installer Roblox Studio</li>
-          <li>Apprendre l'interface et les bases</li>
-          <li>Créer des éléments UI (ImageButton, TextButton, Frame, ScreenGui)</li>
-          <li>Écrire des scripts (LocalScript, Script)</li>
-          <li>Utiliser RemoteEvent et RemoteFunction</li>
-          <li>Publier et promouvoir ton jeu</li>
-        </ol>
-        <a href="https://developer.roblox.com/en-us/learn-roblox/getting-started" target="_blank" rel="noopener">Documentation officielle Roblox Studio</a>
+          <li>Comprendre l’interface</li>
+          <li>Ajouter des objets et scripts</li>
+          <li>Gérer les événements avec RemoteEvent</li>
+          <li>Publier et partager ton jeu</li>
+          <li>Mettre en place des Game Pass et achats in-game</li>
+        </ul>
+        <a href="https://developer.roblox.com/en-us/articles/Getting-Started" target="_blank" rel="noopener">Guide officiel Roblox Studio</a>
         <div class="video-container">
-          <iframe src="https://www.youtube.com/embed/Z5Z2xP3Q4yY" title="Tutoriel complet Roblox Studio" allowfullscreen></iframe>
+          <iframe src="https://www.youtube.com/embed/UoZeqFgZyKI" title="Créer un jeu Roblox complet" allowfullscreen></iframe>
+        </div>
+      \`
+    },
+    {
+      id: "trucs-astuces",
+      title: "Trucs et astuces pour gagner des Robux facilement",
+      content: \`
+        <p>Voici quelques astuces pour augmenter tes gains de Robux :</p>
+        <ul>
+          <li>Participe aux événements officiels Roblox</li>
+          <li>Rejoins des groupes actifs et échange des objets</li>
+          <li>Utilise les codes promotionnels officiels</li>
+          <li>Crée du contenu unique et engageant</li>
+          <li>Fais la promotion sur les réseaux sociaux</li>
+        </ul>
+        <div class="video-container">
+          <iframe src="https://www.youtube.com/embed/VHS8Q8hEnZg" title="Astuces Robux" allowfullscreen></iframe>
         </div>
       \`
     }
   ];
 
-  // Références DOM
   const contentEl = document.getElementById('content');
   const searchBar = document.getElementById('search-bar');
+  const searchBtn = document.getElementById('search-btn');
   const homeBtn = document.getElementById('home-btn');
-  const logoBtn = document.getElementById('logo-btn');
 
-  // Fonction pour afficher toutes les méthodes
-  function showAllMethods() {
+  function renderMethods(list) {
     contentEl.innerHTML = '';
-    methods.forEach(m => {
+    list.forEach(m => {
       const section = document.createElement('section');
       section.className = 'method';
       section.id = m.id;
@@ -228,44 +193,29 @@
     });
   }
 
-  // Fonction de recherche live
   function filterMethods(term) {
     const lowerTerm = term.toLowerCase();
-    contentEl.innerHTML = '';
-    methods.filter(m => m.title.toLowerCase().includes(lowerTerm))
-      .forEach(m => {
-        const section = document.createElement('section');
-        section.className = 'method';
-        section.id = m.id;
-        section.innerHTML = \`
-          <h2>\${m.title}</h2>
-          \${m.content}
-        \`;
-        contentEl.appendChild(section);
-      });
+    const filtered = methods.filter(m => m.title.toLowerCase().includes(lowerTerm));
+    renderMethods(filtered);
   }
 
-  // Événements
-  homeBtn.addEventListener('click', () => {
-    searchBar.value = '';
-    showAllMethods();
+  searchBtn.addEventListener('click', () => {
+    filterMethods(searchBar.value.trim());
   });
-  logoBtn.addEventListener('click', () => {
-    searchBar.value = '';
-    showAllMethods();
-  });
-  searchBar.addEventListener('input', (e) => {
-    const val = e.target.value.trim();
-    if (val === '') {
-      showAllMethods();
-    } else {
-      filterMethods(val);
+
+  searchBar.addEventListener('keydown', (e) => {
+    if (e.key === 'Enter') {
+      filterMethods(searchBar.value.trim());
     }
   });
 
-  // Initialisation
-  showAllMethods();
+  homeBtn.addEventListener('click', () => {
+    searchBar.value = '';
+    renderMethods(methods);
+  });
+
+  // Affichage initial
+  renderMethods(methods);
 </script>
 </body>
 </html>
-
