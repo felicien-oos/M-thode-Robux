@@ -3,157 +3,225 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Méthode Robux - Ultra précise</title>
+<title>Méthode Robux - Le guide ultra complet</title>
 <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/5/5f/Robux_2019_Logo_Green.svg" />
 <style>
+  /* Reset et base */
+  * {
+    box-sizing: border-box;
+  }
   body {
-    margin: 0; background: #0a0a0a; color: #eee;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    line-height: 1.6;
+    margin: 0; padding: 20px 15px;
+    background: linear-gradient(135deg, #0b1d0b 0%, #002d00 100%);
+    font-family: 'Poppins', sans-serif;
+    color: #d0f0a0;
+    -webkit-font-smoothing: antialiased;
     user-select: none;
   }
-  a { color: #00ff99; font-weight: 600; text-decoration:none;}
-  a:hover { text-decoration: underline;}
+
+  /* Header */
   header {
-    display: flex; align-items: center; justify-content: space-between;
-    padding: 20px 30px;
-    background: linear-gradient(90deg, #00ff99 0%, #00bb77 100%);
-    box-shadow: 0 4px 15px rgba(0,255,153,0.5);
-    position: sticky; top: 0; z-index: 10;
+    position: sticky;
+    top: 0;
+    background: #004d00;
+    padding: 15px 30px;
+    border-radius: 12px;
+    box-shadow: 0 0 20px #00ff9988;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 10;
   }
-  .logo {
+  header h1 {
+    color: #b2ff99;
+    font-weight: 900;
+    font-size: 28px;
+    margin: 0;
+    letter-spacing: 1.5px;
+    text-shadow: 0 0 10px #00ff88;
+    user-select: none;
+    flex-grow: 1;
+    text-align: center;
+  }
+  .icon-home {
+    font-size: 30px;
+    cursor: pointer;
+    color: #00ff99;
+    user-select: none;
+    font-weight: 700;
+    padding: 8px 15px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+  }
+  .icon-home:hover {
+    background-color: #00ff9944;
+  }
+  .logo-svg {
+    width: 60px;
     height: 60px;
     filter: drop-shadow(0 0 10px #00ff99);
-    animation: pulse 3s infinite alternate;
+    animation: pulse 3s ease-in-out infinite alternate;
     cursor: pointer;
   }
   @keyframes pulse {
-    0% { filter: drop-shadow(0 0 10px #00ff99);}
-    100% { filter: drop-shadow(0 0 25px #00ff99);}
+    0% { filter: drop-shadow(0 0 10px #00ff99); }
+    100% { filter: drop-shadow(0 0 30px #00ff99); }
   }
-  h1 {
-    font-weight: 900; font-size: 28px; text-align: center; flex-grow: 1;
-    color: #fff; letter-spacing: 2px; text-shadow: 0 0 8px #00ff99;
-  }
-  .icon-home {
-    font-size: 26px; cursor: pointer; color: #fff;
-    user-select: none; padding: 5px 10px; border-radius: 6px;
-    background: rgba(0,0,0,0.3); box-shadow: 0 0 10px #00ff99;
-  }
-  .icon-home:hover {
-    background: #00ff99; color: #000; box-shadow: 0 0 15px #00ff99;
-  }
-  input[type="search"] {
-    display: block; margin: 20px auto 40px;
-    width: 300px; max-width: 90%; padding: 12px 20px;
-    border-radius: 40px; border: none;
-    font-size: 16px; font-weight: 600;
-    background: #222; color: #ddd;
-    box-shadow: inset 0 0 15px #00ff99;
-  }
-  input[type="search"]::placeholder { color: #555;}
-  input[type="search"]:focus {
-    outline: none; background: #000; color: #0f0;
-    box-shadow: 0 0 12px #00ff99;
-  }
-  section {
-    background: #111; margin-bottom: 50px;
-    padding: 25px 30px; border-radius: 16px;
-    box-shadow: 0 0 20px #00ff99aa;
-    transition: box-shadow 0.5s ease;
-  }
-  section:hover {
-    box-shadow: 0 0 35px #00ff99ff;
-  }
-  section h2 {
-    font-size: 22px; margin-top: 0; margin-bottom: 12px;
-    text-shadow: 0 0 6px #00ff99;
-  }
-  section p {
-    font-size: 15px; line-height: 1.5; margin-bottom: 15px;
-  }
-  section ul {
-    padding-left: 20px; margin-bottom: 15px;
-  }
-  section ul li {
-    margin-bottom: 10px;
-  }
-  iframe {
-    display: block; width: 100%; max-width: 700px;
-    height: 395px; border-radius: 12px;
-    box-shadow: 0 0 15px #00ff99cc;
-    margin: 10px auto 0;
+
+  /* Barre recherche */
+  #search {
+    display: block;
+    width: 320px;
+    max-width: 95%;
+    margin: 35px auto 55px;
+    padding: 14px 24px;
+    border-radius: 50px;
+    font-size: 18px;
+    font-weight: 700;
+    border: none;
+    background-color: #003300;
+    color: #b2ff99;
+    box-shadow: inset 0 0 15px #00ff9944;
     transition: box-shadow 0.3s ease;
   }
-  iframe:hover {
-    box-shadow: 0 0 25px #00ff99ff;
+  #search::placeholder {
+    color: #006600cc;
   }
-  @media (max-width: 800px) {
-    iframe { height: 220px;}
-    header {
-      flex-wrap: wrap; gap: 10px; justify-content: center;
+  #search:focus {
+    outline: none;
+    box-shadow: 0 0 30px #00ff99;
+    background-color: #005500;
+    color: #00ff99;
+  }
+
+  /* Sections */
+  section {
+    background: #004000cc;
+    border-radius: 18px;
+    padding: 30px 35px;
+    margin-bottom: 60px;
+    box-shadow: 0 0 30px #00ff9955;
+    transition: box-shadow 0.4s ease;
+  }
+  section:hover {
+    box-shadow: 0 0 50px #00ff99cc;
+  }
+  section h2 {
+    font-size: 26px;
+    color: #b2ff99;
+    margin-top: 0;
+    font-weight: 900;
+    text-shadow: 0 0 12px #00ff99;
+    letter-spacing: 0.02em;
+  }
+  section p {
+    font-size: 16px;
+    line-height: 1.65;
+    margin-bottom: 18px;
+    color: #d0f7a0;
+  }
+  section ul {
+    margin-left: 20px;
+    margin-bottom: 25px;
+    color: #c0f0a0;
+  }
+  section ul li {
+    margin-bottom: 12px;
+    font-weight: 600;
+  }
+  a {
+    color: #7cff7c;
+    font-weight: 700;
+    text-decoration: none;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+
+  /* Vidéo */
+  iframe {
+    display: block;
+    width: 100%;
+    max-width: 720px;
+    height: 400px;
+    border-radius: 20px;
+    margin: 10px auto 0;
+    box-shadow: 0 0 40px #00ff9977;
+    transition: box-shadow 0.4s ease;
+  }
+  iframe:hover {
+    box-shadow: 0 0 60px #00ff99cc;
+  }
+
+  /* Responsive */
+  @media (max-width: 880px) {
+    iframe {
+      height: 250px;
     }
-    h1 { flex-basis: 100%;}
-    input[type="search"] { width: 90%;}
+    #search {
+      width: 90%;
+    }
   }
 </style>
 </head>
 <body>
 
 <header>
-  <div class="icon-home" onclick="scrollToTop()">🏠 Accueil</div>
-  <h1>Méthode Robux - Ultra précise</h1>
-  <img src="https://upload.wikimedia.org/wikipedia/commons/5/5f/Robux_2019_Logo_Green.svg" alt="Logo Méthode Robux" class="logo" />
+  <div class="icon-home" onclick="scrollToTop()" title="Retour en haut">🏠 Accueil</div>
+  <h1>Méthode Robux - Ultra Complet</h1>
+  <!-- Logo Robux SVG -->
+  <svg class="logo-svg" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg" fill="#00ff99" aria-label="Logo Robux">
+    <path d="M128 0L24 64v128l104 64 104-64V64L128 0zm0 38.5l72 43.6v92.7l-72 43.5-72-43.5V82.1l72-43.6z"/>
+  </svg>
 </header>
 
-<input type="search" id="search" placeholder="🔍 Rechercher une méthode..." oninput="filterSections()" />
+<input type="search" id="search" placeholder="🔍 Rechercher une méthode..." oninput="filterSections()" aria-label="Rechercher une méthode">
 
 <div id="content">
 
 <section>
-  <h2>Méthode 1 - Microsoft Rewards : Créer un compte et gagner des points</h2>
-  <p><strong>Étape 1 :</strong> <a href="https://account.microsoft.com/account" target="_blank" rel="noopener">Créer un compte Microsoft</a> en entrant vos infos personnelles.</p>
-  <p><strong>Étape 2 :</strong> Se connecter à <a href="https://rewards.microsoft.com/" target="_blank" rel="noopener">Microsoft Rewards</a> avec ce compte.</p>
-  <p><strong>Étape 3 :</strong> Faire les recherches Bing tous les jours pour accumuler des points (jusqu'à 150 points par jour).</p>
-  <p><strong>Étape 4 :</strong> Répondre aux quiz et sondages proposés pour gagner encore plus de points.</p>
-  <p><strong>Étape 5 :</strong> Échanger vos points contre des cartes cadeaux Xbox, Amazon, ou directement des Robux via Microsoft Gift Cards.</p>
-  <iframe src="https://www.youtube.com/embed/Yo4hTvks_d8" title="Tutoriel Microsoft Rewards" allowfullscreen></iframe>
+  <h2>Méthode 1 - Microsoft Rewards : Créer un compte, utiliser Bing et gagner des points</h2>
+  <p><strong>Qu'est-ce que Bing ?</strong> Bing est le moteur de recherche officiel de Microsoft, similaire à Google. En l’utilisant, vous pouvez accumuler des points grâce à Microsoft Rewards.</p>
+  <p><strong>Étape 1 :</strong> <a href="https://account.microsoft.com/account" target="_blank" rel="noopener noreferrer">Créer un compte Microsoft</a> en remplissant les informations demandées (email, mot de passe, etc.).</p>
+  <p><strong>Étape 2 :</strong> Accédez à <a href="https://rewards.microsoft.com/" target="_blank" rel="noopener noreferrer">Microsoft Rewards</a> et connectez-vous avec votre compte Microsoft.</p>
+  <p><strong>Étape 3 :</strong> Utilisez Bing (<a href="https://www.bing.com" target="_blank" rel="noopener noreferrer">https://www.bing.com</a>) pour faire vos recherches internet quotidiennes. Chaque recherche vous rapporte des points.</p>
+  <p><strong>Étape 4 :</strong> Complétez aussi des quiz, défis et autres activités sur Microsoft Rewards pour gagner encore plus de points.</p>
+  <p><strong>Étape 5 :</strong> Une fois que vous avez accumulé assez de points, échangez-les contre des cartes cadeaux Xbox ou Microsoft, puis utilisez-les pour acheter des Robux sur le site officiel Roblox.</p>
+  <iframe src="https://www.youtube.com/embed/yoYuDcnpV5E" title="Tutoriel Microsoft Rewards - Gagner des points et Robux" allowfullscreen></iframe>
 </section>
 
 <section>
   <h2>Méthode 2 - Créer et vendre des vêtements sur Roblox</h2>
-  <p><strong>Étape 1 :</strong> Utiliser un logiciel comme <a href="https://www.gimp.org/" target="_blank" rel="noopener">GIMP</a> (gratuit) ou Photoshop pour créer un t-shirt ou pantalon aux bonnes dimensions (512x512 pixels).</p>
-  <p><strong>Étape 2 :</strong> Connectez-vous sur <a href="https://create.roblox.com" target="_blank" rel="noopener">Roblox Studio</a>, puis allez dans la section "Créer" > "Vêtements".</p>
-  <p><strong>Étape 3 :</strong> Téléchargez votre design, ajoutez un nom, une description claire, puis activez la vente en fixant un prix en Robux.</p>
-  <p><strong>Étape 4 :</strong> Partagez vos créations sur Roblox et attendez les achats pour gagner des Robux.</p>
-  <iframe src="https://www.youtube.com/embed/JeOaU16ioOg" title="Créer et vendre des vêtements Roblox" allowfullscreen></iframe>
+  <p><strong>Étape 1 :</strong> Téléchargez et installez un logiciel gratuit comme <a href="https://www.gimp.org/downloads/" target="_blank" rel="noopener noreferrer">GIMP</a> pour créer vos designs (512x512 pixels).</p>
+  <p><strong>Étape 2 :</strong> Connectez-vous à <a href="https://create.roblox.com" target="_blank" rel="noopener noreferrer">Roblox Studio</a>, puis allez dans "Vêtements".</p>
+  <p><strong>Étape 3 :</strong> Importez votre design, donnez un nom et une description.</p>
+  <p><strong>Étape 4 :</strong> Activez la vente et fixez un prix en Robux.</p>
+  <p><strong>Étape 5 :</strong> Partagez vos vêtements et attendez les achats pour gagner des Robux.</p>
+  <iframe src="https://www.youtube.com/embed/4bXcSCg_xXY" title="Créer et vendre des vêtements Roblox - Tutoriel complet" allowfullscreen></iframe>
 </section>
 
 <section>
   <h2>Méthode 3 - Créer un Game Pass sur Roblox Studio</h2>
-  <p><strong>Étape 1 :</strong> Dans Roblox Studio, ouvrez votre jeu ou créez-en un nouveau.</p>
-  <p><strong>Étape 2 :</strong> Dans la page de configuration du jeu, cliquez sur "Game Passes" puis "Créer un nouveau".</p>
-  <p><strong>Étape 3 :</strong> Téléchargez une image attractive, donnez un nom et une description précise à votre Game Pass.</p>
-  <p><strong>Étape 4 :</strong> Mettez votre Game Pass en vente en définissant un prix raisonnable.</p>
-  <p><strong>Étape 5 :</strong> Dans votre jeu, utilisez un script Lua simple qui détecte l'achat du Game Pass et débloque des fonctionnalités exclusives pour les joueurs.</p>
-  <iframe src="https://www.youtube.com/embed/lvP5ozb15Mw" title="Tutoriel Game Pass Roblox" allowfullscreen></iframe>
+  <p><strong>Étape 1 :</strong> Ouvrez Roblox Studio et créez ou chargez un jeu.</p>
+  <p><strong>Étape 2 :</strong> Sur la page de gestion du jeu sur le site Roblox, cliquez sur "Game Passes", puis "Créer un Game Pass".</p>
+  <p><strong>Étape 3 :</strong> Téléchargez une image pour votre Game Pass, donnez-lui un nom et une description.</p>
+  <p><strong>Étape 4 :</strong> Fixez le prix en Robux, puis cliquez sur "Créer".</p>
+  <p><strong>Étape 5 :</strong> Dans Roblox Studio, utilisez un <code>Script</code> et un <code>RemoteEvent</code> pour vérifier si un joueur possède le Game Pass et activer ses avantages dans le jeu.</p>
+  <iframe src="https://www.youtube.com/embed/IOq1P8GZh9w" title="Comment créer un Game Pass Roblox - Tutoriel complet" allowfullscreen></iframe>
 </section>
 
 <section>
-  <h2>Méthode 4 - Participer à des concours Roblox pour gagner des Robux</h2>
-  <p><strong>Étape 1 :</strong> Créez un compte sur <a href="https://devforum.roblox.com" target="_blank" rel="noopener">Roblox DevForum</a>.</p>
-  <p><strong>Étape 2 :</strong> Suivez les annonces des concours officiels, souvent relayés sur Twitter et le forum Roblox.</p>
-  <p><strong>Étape 3 :</strong> Créez des jeux, vêtements ou modèles en respectant les règles du concours.</p>
-  <p><strong>Étape 4 :</strong> Soumettez votre création avant la date limite et attendez les résultats.</p>
-  <iframe src="https://www.youtube.com/embed/f6g6RnvPUIc" title="Concours Roblox Guide" allowfullscreen></iframe>
+  <h2>Méthode 4 - Participer aux événements Roblox officiels</h2>
+  <p><strong>Étape 1 :</strong> Suivez le blog officiel Roblox et leurs réseaux sociaux pour connaître les événements en cours.</p>
+  <p><strong>Étape 2 :</strong> Participez aux événements, souvent ils donnent des objets gratuits ou des Robux en récompense.</p>
+  <p><strong>Étape 3 :</strong> Parfois, vous pouvez gagner des Robux en accomplissant des défis ou en participant à des concours créatifs.</p>
+  <iframe src="https://www.youtube.com/embed/qXch6Trq4zA" title="Événements Roblox et comment gagner des Robux" allowfullscreen></iframe>
 </section>
 
 <section>
-  <h2>Méthode 5 - Utiliser des applications de récompenses pour obtenir des Robux</h2>
-  <p><strong>Étape 1 :</strong> Inscrivez-vous sur <a href="https://swagbucks.com" target="_blank" rel="noopener">Swagbucks</a> et/ou <a href="https://www.idle-empire.com" target="_blank" rel="noopener">Idle-Empire</a>.</p>
-  <p><strong>Étape 2 :</strong> Complétez des tâches : sondages, visionnage de vidéos, offres spéciales pour accumuler des points.</p>
-  <p><strong>Étape 3 :</strong> Échangez vos points contre des cartes cadeaux Roblox, puis utilisez-les pour acheter des Robux.</
-
-
-    
-
+  <h2>Méthode 5 - Utiliser Microsoft Rewards pour acheter directement des Robux</h2>
+  <p><strong>Étape 1 :</strong> Gagnez des points avec Microsoft Rewards comme expliqué dans la méthode 1.</p>
+  <p><strong>Étape 2 :</strong> Échangez vos points contre des cartes cadeaux Xbox ou Microsoft Store.</p>
+  <p><strong>Étape 3 :</strong> Utilisez ces cartes cadeaux pour acheter des Robux directement sur le site officiel Roblox.</p>
+  <iframe src="https://www.youtube.com/embed/yoYuDcnpV5E" title="Tutoriel pour acheter des Robux avec Microsoft Rewards" allowfullscreen></iframe>
+</section
