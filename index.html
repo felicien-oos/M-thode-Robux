@@ -1,154 +1,159 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Méthode Robux</title>
-  <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/5/5f/Robux_2019_Logo_Green.svg">
-  <style>
-    body {
-      background-color: #111;
-      color: #fff;
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 20px;
-    }
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Méthode Robux - Ultra précise</title>
+<link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/5/5f/Robux_2019_Logo_Green.svg" />
+<style>
+  body {
+    margin: 0; background: #0a0a0a; color: #eee;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    user-select: none;
+  }
+  a { color: #00ff99; font-weight: 600; text-decoration:none;}
+  a:hover { text-decoration: underline;}
+  header {
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 20px 30px;
+    background: linear-gradient(90deg, #00ff99 0%, #00bb77 100%);
+    box-shadow: 0 4px 15px rgba(0,255,153,0.5);
+    position: sticky; top: 0; z-index: 10;
+  }
+  .logo {
+    height: 60px;
+    filter: drop-shadow(0 0 10px #00ff99);
+    animation: pulse 3s infinite alternate;
+    cursor: pointer;
+  }
+  @keyframes pulse {
+    0% { filter: drop-shadow(0 0 10px #00ff99);}
+    100% { filter: drop-shadow(0 0 25px #00ff99);}
+  }
+  h1 {
+    font-weight: 900; font-size: 28px; text-align: center; flex-grow: 1;
+    color: #fff; letter-spacing: 2px; text-shadow: 0 0 8px #00ff99;
+  }
+  .icon-home {
+    font-size: 26px; cursor: pointer; color: #fff;
+    user-select: none; padding: 5px 10px; border-radius: 6px;
+    background: rgba(0,0,0,0.3); box-shadow: 0 0 10px #00ff99;
+  }
+  .icon-home:hover {
+    background: #00ff99; color: #000; box-shadow: 0 0 15px #00ff99;
+  }
+  input[type="search"] {
+    display: block; margin: 20px auto 40px;
+    width: 300px; max-width: 90%; padding: 12px 20px;
+    border-radius: 40px; border: none;
+    font-size: 16px; font-weight: 600;
+    background: #222; color: #ddd;
+    box-shadow: inset 0 0 15px #00ff99;
+  }
+  input[type="search"]::placeholder { color: #555;}
+  input[type="search"]:focus {
+    outline: none; background: #000; color: #0f0;
+    box-shadow: 0 0 12px #00ff99;
+  }
+  section {
+    background: #111; margin-bottom: 50px;
+    padding: 25px 30px; border-radius: 16px;
+    box-shadow: 0 0 20px #00ff99aa;
+    transition: box-shadow 0.5s ease;
+  }
+  section:hover {
+    box-shadow: 0 0 35px #00ff99ff;
+  }
+  section h2 {
+    font-size: 22px; margin-top: 0; margin-bottom: 12px;
+    text-shadow: 0 0 6px #00ff99;
+  }
+  section p {
+    font-size: 15px; line-height: 1.5; margin-bottom: 15px;
+  }
+  section ul {
+    padding-left: 20px; margin-bottom: 15px;
+  }
+  section ul li {
+    margin-bottom: 10px;
+  }
+  iframe {
+    display: block; width: 100%; max-width: 700px;
+    height: 395px; border-radius: 12px;
+    box-shadow: 0 0 15px #00ff99cc;
+    margin: 10px auto 0;
+    transition: box-shadow 0.3s ease;
+  }
+  iframe:hover {
+    box-shadow: 0 0 25px #00ff99ff;
+  }
+  @media (max-width: 800px) {
+    iframe { height: 220px;}
     header {
-      display: flex;
-      align-items: center;
-      gap: 12px;
-      margin-bottom: 20px;
+      flex-wrap: wrap; gap: 10px; justify-content: center;
     }
-    .icon-home {
-      font-size: 22px;
-      cursor: pointer;
-      color: white;
-    }
-    h1 {
-      font-size: 24px;
-    }
-    input[type="search"] {
-      width: 300px;
-      padding: 8px 12px;
-      border-radius: 8px;
-      border: none;
-      margin-bottom: 25px;
-      font-size: 14px;
-      background-color: #222;
-      color: white;
-    }
-    section {
-      margin-bottom: 40px;
-      border-bottom: 1px solid #333;
-      padding-bottom: 20px;
-    }
-    iframe {
-      margin-top: 10px;
-      max-width: 100%;
-    }
-    ul {
-      padding-left: 20px;
-    }
-  </style>
+    h1 { flex-basis: 100%;}
+    input[type="search"] { width: 90%;}
+  }
+</style>
 </head>
 <body>
-  <header>
-    <div class="icon-home" onclick="scrollToTop()">🏠 Accueil</div>
-    <h1>Méthode Robux - Toutes les astuces sûres et gratuites</h1>
-  </header>
 
-  <input type="search" id="search" placeholder="🔍 Rechercher une méthode..." oninput="filterSections()" />
+<header>
+  <div class="icon-home" onclick="scrollToTop()">🏠 Accueil</div>
+  <h1>Méthode Robux - Ultra précise</h1>
+  <img src="https://upload.wikimedia.org/wikipedia/commons/5/5f/Robux_2019_Logo_Green.svg" alt="Logo Méthode Robux" class="logo" />
+</header>
 
-  <div id="content">
-    <!-- Méthode 1 -->
-    <section>
-      <h2>🔹 Méthode 1 : Microsoft Rewards</h2>
-      <p>Microsoft te récompense avec des points quand tu fais des recherches avec Bing ou que tu complètes des quêtes. Tu peux ensuite échanger ces points contre une carte-cadeau Roblox.</p>
-      <ol>
-        <li>Va sur <a href="https://account.microsoft.com" target="_blank">account.microsoft.com</a> et crée un compte Microsoft.</li>
-        <li>Connecte-toi à <a href="https://rewards.microsoft.com" target="_blank">Microsoft Rewards</a>.</li>
-        <li>Utilise Bing pour faire des recherches et gagner des points chaque jour.</li>
-        <li>Participe à des quiz, des sondages, et des défis pour gagner encore plus de points.</li>
-        <li>Une fois assez de points, choisis une carte Roblox dans la boutique et utilise-la sur <a href="https://www.roblox.com/redeem" target="_blank">roblox.com/redeem</a>.</li>
-      </ol>
-      <iframe src="https://www.youtube.com/embed/y5K1VlUQCdw" height="315" frameborder="0" allowfullscreen></iframe>
-    </section>
+<input type="search" id="search" placeholder="🔍 Rechercher une méthode..." oninput="filterSections()" />
 
-    <!-- Méthode 2 -->
-    <section>
-      <h2>🔹 Méthode 2 : Créer et vendre des vêtements</h2>
-      <p>Crée des t-shirts ou pantalons sur Roblox et vends-les si tu as l'abonnement Premium.</p>
-      <ol>
-        <li>Va sur <a href="https://www.roblox.com/create" target="_blank">roblox.com/create</a>.</li>
-        <li>Crée une image de 585x559 pixels pour un T-shirt (format PNG).</li>
-        <li>Clique sur "T-shirts" dans l’onglet Créer.</li>
-        <li>Téléverse ton image et donne-lui un nom.</li>
-        <li>Va dans les paramètres du T-shirt, coche "À vendre", et définis un prix (au moins 2 Robux).</li>
-      </ol>
-      <iframe src="https://www.youtube.com/embed/Md6V0btmG_g" height="315" frameborder="0" allowfullscreen></iframe>
-    </section>
+<div id="content">
 
-    <!-- Méthode 3 -->
-    <section>
-      <h2>🔹 Méthode 3 : Créer un Game Pass et le vendre</h2>
-      <p>Ajoute un Game Pass à ton jeu Roblox pour permettre aux joueurs de débloquer des bonus payants.</p>
-      <ol>
-        <li>Va sur <a href="https://www.roblox.com/develop" target="_blank">roblox.com/develop</a>.</li>
-        <li>Clique sur ton jeu, puis "Store".</li>
-        <li>Choisis "Passes", ajoute une image et une description.</li>
-        <li>Clique sur "Configurer", puis "À vendre" et définis le prix.</li>
-        <li>Utilise un script dans ton jeu pour que le bonus fonctionne si le joueur possède le pass.</li>
-      </ol>
-      <iframe src="https://www.youtube.com/embed/nRjYuRXgDME" height="315" frameborder="0" allowfullscreen></iframe>
-    </section>
+<section>
+  <h2>Méthode 1 - Microsoft Rewards : Créer un compte et gagner des points</h2>
+  <p><strong>Étape 1 :</strong> <a href="https://account.microsoft.com/account" target="_blank" rel="noopener">Créer un compte Microsoft</a> en entrant vos infos personnelles.</p>
+  <p><strong>Étape 2 :</strong> Se connecter à <a href="https://rewards.microsoft.com/" target="_blank" rel="noopener">Microsoft Rewards</a> avec ce compte.</p>
+  <p><strong>Étape 3 :</strong> Faire les recherches Bing tous les jours pour accumuler des points (jusqu'à 150 points par jour).</p>
+  <p><strong>Étape 4 :</strong> Répondre aux quiz et sondages proposés pour gagner encore plus de points.</p>
+  <p><strong>Étape 5 :</strong> Échanger vos points contre des cartes cadeaux Xbox, Amazon, ou directement des Robux via Microsoft Gift Cards.</p>
+  <iframe src="https://www.youtube.com/embed/Yo4hTvks_d8" title="Tutoriel Microsoft Rewards" allowfullscreen></iframe>
+</section>
 
-    <!-- Méthode 4 -->
-    <section>
-      <h2>🔹 Méthode 4 : Participer à des concours Roblox</h2>
-      <p>Participe à des concours officiels ou communautaires sur Roblox (jeux, vêtements, fan arts).</p>
-      <ol>
-        <li>Inscris-toi sur <a href="https://devforum.roblox.com" target="_blank">DevForum Roblox</a>.</li>
-        <li>Suis les actualités sur <a href="https://twitter.com/Roblox" target="_blank">@Roblox</a> pour ne rien manquer.</li>
-        <li>Lis bien les règles du concours avant de participer.</li>
-        <li>Soumets ton projet à temps avec toutes les infos demandées.</li>
-      </ol>
-      <iframe src="https://www.youtube.com/embed/hzjG4qhGD7s" height="315" frameborder="0" allowfullscreen></iframe>
-    </section>
+<section>
+  <h2>Méthode 2 - Créer et vendre des vêtements sur Roblox</h2>
+  <p><strong>Étape 1 :</strong> Utiliser un logiciel comme <a href="https://www.gimp.org/" target="_blank" rel="noopener">GIMP</a> (gratuit) ou Photoshop pour créer un t-shirt ou pantalon aux bonnes dimensions (512x512 pixels).</p>
+  <p><strong>Étape 2 :</strong> Connectez-vous sur <a href="https://create.roblox.com" target="_blank" rel="noopener">Roblox Studio</a>, puis allez dans la section "Créer" > "Vêtements".</p>
+  <p><strong>Étape 3 :</strong> Téléchargez votre design, ajoutez un nom, une description claire, puis activez la vente en fixant un prix en Robux.</p>
+  <p><strong>Étape 4 :</strong> Partagez vos créations sur Roblox et attendez les achats pour gagner des Robux.</p>
+  <iframe src="https://www.youtube.com/embed/JeOaU16ioOg" title="Créer et vendre des vêtements Roblox" allowfullscreen></iframe>
+</section>
 
-    <!-- Méthode 5 -->
-    <section>
-      <h2>🔹 Méthode 5 : Utiliser des apps de récompenses</h2>
-      <p>Utilise des sites et applis pour gagner des cartes-cadeaux après avoir rempli des missions ou sondages.</p>
-      <ol>
-        <li>Inscris-toi sur <a href="https://www.swagbucks.com" target="_blank">Swagbucks</a> et complète des offres pour gagner des SB.</li>
-        <li>Utilise <a href="https://www.idle-empire.com" target="_blank">Idle-Empire</a> pour des vidéos, sondages et récompenses directes.</li>
-        <li>Installe Google Opinion Rewards sur Android et réponds à de courts sondages.</li>
-        <li>Échange les points contre des cartes Roblox sur les plateformes partenaires.</li>
-      </ol>
-      <iframe src="https://www.youtube.com/embed/XysOU4oQ-3U" height="315" frameborder="0" allowfullscreen></iframe>
-    </section>
+<section>
+  <h2>Méthode 3 - Créer un Game Pass sur Roblox Studio</h2>
+  <p><strong>Étape 1 :</strong> Dans Roblox Studio, ouvrez votre jeu ou créez-en un nouveau.</p>
+  <p><strong>Étape 2 :</strong> Dans la page de configuration du jeu, cliquez sur "Game Passes" puis "Créer un nouveau".</p>
+  <p><strong>Étape 3 :</strong> Téléchargez une image attractive, donnez un nom et une description précise à votre Game Pass.</p>
+  <p><strong>Étape 4 :</strong> Mettez votre Game Pass en vente en définissant un prix raisonnable.</p>
+  <p><strong>Étape 5 :</strong> Dans votre jeu, utilisez un script Lua simple qui détecte l'achat du Game Pass et débloque des fonctionnalités exclusives pour les joueurs.</p>
+  <iframe src="https://www.youtube.com/embed/lvP5ozb15Mw" title="Tutoriel Game Pass Roblox" allowfullscreen></iframe>
+</section>
 
-    <!-- Créer un jeu complet -->
-    <section>
-      <h2>🎮 Méthode Bonus : Créer un jeu complet Roblox</h2>
-      <p>Apprends à créer un vrai jeu avec Roblox Studio : Game Pass, boutons, UI, scripts, RemoteEvents, etc.</p>
-      <iframe src="https://www.youtube.com/embed/UoZeqFgZyKI" height="400" frameborder="0" allowfullscreen></iframe>
-    </section>
-  </div>
+<section>
+  <h2>Méthode 4 - Participer à des concours Roblox pour gagner des Robux</h2>
+  <p><strong>Étape 1 :</strong> Créez un compte sur <a href="https://devforum.roblox.com" target="_blank" rel="noopener">Roblox DevForum</a>.</p>
+  <p><strong>Étape 2 :</strong> Suivez les annonces des concours officiels, souvent relayés sur Twitter et le forum Roblox.</p>
+  <p><strong>Étape 3 :</strong> Créez des jeux, vêtements ou modèles en respectant les règles du concours.</p>
+  <p><strong>Étape 4 :</strong> Soumettez votre création avant la date limite et attendez les résultats.</p>
+  <iframe src="https://www.youtube.com/embed/f6g6RnvPUIc" title="Concours Roblox Guide" allowfullscreen></iframe>
+</section>
 
-  <script>
-    function scrollToTop() {
-      window.scrollTo({ top: 0, behavior: 'smooth' });
-    }
+<section>
+  <h2>Méthode 5 - Utiliser des applications de récompenses pour obtenir des Robux</h2>
+  <p><strong>Étape 1 :</strong> Inscrivez-vous sur <a href="https://swagbucks.com" target="_blank" rel="noopener">Swagbucks</a> et/ou <a href="https://www.idle-empire.com" target="_blank" rel="noopener">Idle-Empire</a>.</p>
+  <p><strong>Étape 2 :</strong> Complétez des tâches : sondages, visionnage de vidéos, offres spéciales pour accumuler des points.</p>
+  <p><strong>Étape 3 :</strong> Échangez vos points contre des cartes cadeaux Roblox, puis utilisez-les pour acheter des Robux.</
 
-    function filterSections() {
-      const input = document.getElementById('search').value.toLowerCase();
-      const sections = document.querySelectorAll('section');
-      sections.forEach(sec => {
-        const text = sec.innerText.toLowerCase();
-        sec.style.display = text.includes(input) ? '' : 'none';
-      });
-    }
-  </script>
-</body>
-</html>
+
+    
+
