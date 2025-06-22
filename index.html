@@ -195,7 +195,7 @@
 
   function filterMethods(term) {
     const lowerTerm = term.toLowerCase();
-    const filtered = methods.filter(m => m.title.toLowerCase().includes(lowerTerm));
+    const filtered = methods.filter(m => m.title.toLowerCase().includes(lowerTerm) || m.content.toLowerCase().includes(lowerTerm));
     renderMethods(filtered);
   }
 
@@ -214,8 +214,9 @@
     renderMethods(methods);
   });
 
-  // Affichage initial
+  // Affichage initial : toutes les méthodes, direct à l'ouverture
   renderMethods(methods);
 </script>
 </body>
 </html>
+
