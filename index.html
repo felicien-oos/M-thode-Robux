@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="description" content="Méthode Robux - Guide complet pour gagner des Robux gratuitement, créer des jeux Roblox, vendre des Game Pass, et rester sécurisé." />
+<title>Méthode Robux - Gagne des Robux gratuitement !</title>
+<style>
+  /* Styles CSS ici */
+  body {
+    margin:0; padding:0; background:#121212; color:#eee; font-family:sans-serif;
+    min-height:100vh; display:flex; flex-direction:column;
+  }
+  header {
+    position:sticky; top:0; background:#1f1f1f; display:flex; align-items:center;
+    padding:10px 20px; gap:15px; border-bottom:1px solid #333; z-index:100;
+  }
+  header img.logo {
+    height:30px; width:30px; cursor:pointer;
+  }
+  #home-btn {
+    background:none; border:none; color:#eee; font-size:1.2rem; cursor:pointer;
+  }
+  #home-btn:hover, #logo-btn:hover {
+    color:#4caf50;
+  }
+  #search-bar {
+    flex-grow:1; padding:8px 12px; border-radius:20px; border:none; outline:none;
+    background:#2c2c2c; color:#eee; font-size:1rem;
+  }
+  main {
+    max-width:900px; margin:auto; padding:20px; flex-grow:1;
+  }
+  section.method {
+    background:#1e1e1e; border-radius:10px; padding:20px; margin-bottom:40px;
+    box-shadow:0 0 8px #222;
+  }
+  section.method h2 {
+    color:#81c784; margin-top:0;
+  }
+  section.method a {
+    color:#4caf50; text-decoration:none; font-weight:600;
+  }
+  section.method a:hover {
+    text-decoration:underline;
+  }
+  .video-container {
+    margin-top:15px; position:relative; padding-bottom:56.25%; height:0; overflow:hidden;
+    border-radius:10px; box-shadow:0 0 10px #000;
+  }
+  .video-container iframe {
+    position:absolute; top:0; left:0; width:100%; height:100%; border:none; border-radius:10px;
+  }
+  footer {
+    background:#1f1f1f; color:#888; text-align:center; padding:10px 0; border-top:1px solid #333;
+    user-select:none;
+  }
+</style>
+</head>
+<body>
+<header>
+  <img src="https://cdn-icons-png.flaticon.com/512/25/25694.png" alt="Logo Accueil" class="logo" id="logo-btn" title="Accueil" tabindex="0" />
+  <button id="home-btn" aria-label="Accueil">🏠 Accueil</button>
+  <input type="search" id="search-bar" placeholder="Chercher une méthode..." aria-label="Recherche des méthodes" />
+</header>
+<main id="content">
+  <!-- Méthodes injectées via JS -->
+</main>
+<footer>
+  © 2025 Méthode Robux - Créé par Félicien
+</footer>
+
+<script>
+  // Données des méthodes complètes avec vidéos intégrées
+  const methods = [
+    {
+      id: "microsoft-rewards",
+      title: "Microsoft Rewards",
+      content: \`
+        <p><strong>Microsoft Rewards</strong> te permet de gagner des points en utilisant Bing et des quiz quotidiens.</p>
+        <ol>
+          <li>Crée un compte Microsoft : <a href="https://account.microsoft.com" target="_blank" rel="noopener">https://account.microsoft.com</a></li>
+          <li>Connecte-toi à <a href="https://rewards.microsoft.com" target="_blank" rel="noopener">https://rewards.microsoft.com</a></li>
+          <li>Fais des recherches sur Bing (environ 20 recherches/jour)</li>
+          <li>Complète les quiz pour accumuler des points</li>
+          <li>Échange tes points contre des cartes Roblox</li>
+          <li>Utilise le code sur <a href="https://www.roblox.com/redeem" target="_blank" rel="noopener">https://www.roblox.com/redeem</a></li>
+        </ol>
+        <a href="https://rewards.microsoft.com" target="_blank" rel="noopener">Aller sur Microsoft Rewards</a>
+        <div class="video-container">
+          <iframe src="https://www.youtube.com/embed/2fEmcgqLg30" title="Tutoriel Microsoft Rewards" allowfullscreen></iframe>
+        </div>
+      \`
+    },
+    {
+      id: "vetements",
+      title: "Créer et vendre des vêtements",
+      content: \`
+        <p>Tu dois avoir Roblox Premium pour vendre des vêtements.</p>
+        <ol>
+          <li>Va sur <a href="https://www.roblox.com/create" target="_blank" rel="noopener">https://www.roblox.com/create</a></li>
+          <li>Choisis "Avatar" puis "T-Shirts"</li>
+          <li>Téléverse une image PNG 512x512</li>
+          <li>Paye 10 Robux pour publier</li>
+          <li>Fixe un prix de vente minimum de 2 Robux</li>
+          <li>Fais la promo dans ton profil et groupes Roblox</li>
+        </ol>
+        <a href="https://www.roblox.com/create" target="_blank" rel="noopener">Créer un vêtement Roblox</a>
+        <div class="video-container">
+          <iframe src="https://www.youtube.com/embed/tU6hU5RxMMI" title="Tutoriel créer vêtements Roblox" allowfullscreen></iframe>
+        </div>
+      \`
+    },
+    {
+      id: "game-pass",
+      title: "Créer un jeu et vendre des Game Pass",
+      content: \`
+        <p>Utilise Roblox Studio pour créer un jeu et vendre des Game Pass.</p>
+        <ol>
+          <li>Télécharge Roblox Studio : <a href="https://www.roblox.com/create" target="_blank" rel="noopener">https://www.roblox.com/create</a></li>
+          <li>Crée un jeu simple</li>
+          <li>Dans la page du jeu, crée un Game Pass dans "Passes de jeu"</li>
+          <li>Ajoute image, nom et description</li>
+          <li>Active la vente et fixe un prix</li>
+          <li>Fais la promo de ton jeu</li>
+        </ol>
+        <p><strong>Termes clés Roblox Studio :</strong></p>
+        <ul>
+          <li><strong>ImageButton</strong> : bouton graphique cliquable</li>
+          <li><strong>TextButton</strong> : bouton texte cliquable</li>
+          <li><strong>Frame</strong> : conteneur UI</li>
+          <li><strong>ScreenGui</strong> : élément racine UI</li>
+          <li><strong>LocalScript</strong> : script client</li>
+          <li><strong>Script</strong> : script serveur</li>
+          <li><strong>RemoteEvent</strong> : communication client-serveur asynchrone</li>
+          <li><strong>RemoteFunction</strong> : communication synchrone</li>
+        </ul>
+        <a href="https://developer.roblox.com/en-us/learn-roblox/getting-started" target="_blank" rel="noopener">Documentation Roblox Studio</a>
+        <div class="video-container">
+          <iframe src="https://www.youtube.com/embed/Q7xq1mjzFys" title="Tutoriel Roblox Studio et Game Pass" allowfullscreen></iframe>
+        </div>
+      \`
+    },
+    {
+      id: "concours",
+      title: "Participer à des concours Roblox",
+      content: \`
+        <p>Roblox organise des concours réguliers pour gagner des Robux et objets rares.</p>
+        <ul>
+          <li><a href="https://devforum.roblox.com" target="_blank" rel="noopener">DevForum Roblox</a></li>
+          <li><a href="https://twitter.com/Roblox" target="_blank" rel="noopener">Twitter officiel Roblox</a></li>
+          <li><a href="https://www.roblox.com/events" target="_blank" rel="noopener">Page événements Roblox</a></li>
+        </ul>
+        <div class="video-container">
+          <iframe src="https://www.youtube.com/embed/OeU7Lv6LS6Q" title="Participer aux concours Roblox" allowfullscreen></iframe>
+        </div>
+      \`
+    },
+    {
+      id: "apps-recompenses",
+      title: "Apps de récompenses",
+      content: \`
+        <p>Utilise des apps comme Swagbucks ou Idle-Empire pour gagner des points échangeables en Robux.</p>
+        <ul>
+          <li><a href="https://www.swagbucks.com" target="_blank" rel="noopener">Swagbucks</a></li>
+          <li><a href="https://idle-empire.com" target="_blank" rel="noopener">Idle-Empire</a></li>
+        </ul>
+        <div class="video-container">
+          <iframe src="https://www.youtube.com/embed/QXqPq3t7u2o" title="Apps récompenses pour Robux" allowfullscreen></iframe>
+        </div>
+      \`
+    },
+    {
+      id: "securite",
+      title: "Sécurité et protection du compte",
+      content: \`
+        <p>Protéger ton compte est essentiel :</p>
+        <ul>
+          <li>Active l'authentification à deux facteurs (2FA)</li>
+          <li>Ne partage jamais ton mot de passe</li>
+          <li>Méfie-toi des sites et apps frauduleuses</li>
+          <li>Utilise un antivirus et navigateur sécurisé</li>
+        </ul>
+        <div class="video-container">
+          <iframe src="https://www.youtube.com/embed/9dNz9kpuJUQ" title="Sécurité Roblox" allowfullscreen></iframe>
+        </div>
+      \`
+    },
+    {
+      id: "methode-studio",
+      title: "Méthode complète Roblox Studio - Débutant à Pro",
+      content: \`
+        <p>Ce guide t'explique comment créer un jeu Roblox de A à Z et vendre des Game Pass.</p>
+        <ol>
+          <li>Installer Roblox Studio</li>
+          <li>Apprendre l'interface et les bases</li>
+          <li>Créer des éléments UI (ImageButton, TextButton, Frame, ScreenGui)</li>
+          <li>Écrire des scripts (LocalScript, Script)</li>
+          <li>Utiliser RemoteEvent et RemoteFunction</li>
+          <li>Publier et promouvoir ton jeu</li>
+        </ol>
+        <a href="https://developer.roblox.com/en-us/learn-roblox/getting-started" target="_blank" rel="noopener">Documentation officielle Roblox Studio</a>
+        <div class="video-container">
+          <iframe src="https://www.youtube.com/embed/Z5Z2xP3Q4yY" title="Tutoriel complet Roblox Studio" allowfullscreen></iframe>
+        </div>
+      \`
+    }
+  ];
+
+  // Références DOM
+  const contentEl = document.getElementById('content');
+  const searchBar = document.getElementById('search-bar');
+  const homeBtn = document.getElementById('home-btn');
+  const logoBtn = document.getElementById('logo-btn');
+
+  // Fonction pour afficher toutes les méthodes
+  function showAllMethods() {
+    contentEl.innerHTML = '';
+    methods.forEach(m => {
+      const section = document.createElement('section');
+      section.className = 'method';
+      section.id = m.id;
+      section.innerHTML = \`
+        <h2>\${m.title}</h2>
+        \${m.content}
+      \`;
+      contentEl.appendChild(section);
+    });
+  }
+
+  // Fonction de recherche live
+  function filterMethods(term) {
+    const lowerTerm = term.toLowerCase();
+    contentEl.innerHTML = '';
+    methods.filter(m => m.title.toLowerCase().includes(lowerTerm))
+      .forEach(m => {
+        const section = document.createElement('section');
+        section.className = 'method';
+        section.id = m.id;
+        section.innerHTML = \`
+          <h2>\${m.title}</h2>
+          \${m.content}
+        \`;
+        contentEl.appendChild(section);
+      });
+  }
+
+  // Événements
+  homeBtn.addEventListener('click', () => {
+    searchBar.value = '';
+    showAllMethods();
+  });
+  logoBtn.addEventListener('click', () => {
+    searchBar.value = '';
+    showAllMethods();
+  });
+  searchBar.addEventListener('input', (e) => {
+    const val = e.target.value.trim();
+    if (val === '') {
+      showAllMethods();
+    } else {
+      filterMethods(val);
+    }
+  });
+
+  // Initialisation
+  showAllMethods();
+</script>
+</body>
+</html>
+
